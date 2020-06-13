@@ -45,7 +45,7 @@ namespace frmInmobiliaria
             return
                 $"Metros: {Metros}\n" +
                 $"Costo: {Costo}\n" +
-                $"Tipo de vivienda: {ToStringTipo()}\n";
+                $"Tipo de vivienda: {ToStringTipo()}";
         }
 
         public double Valuacion()

@@ -51,7 +51,7 @@ namespace frmInmobiliaria
             return
                 $"DNI: {DNI}\n" +
                 $"Nombre: {Nombre}\n" +
-                $"Sexo: {ToStringSexo()}\n";
+                $"Sexo: {ToStringSexo()}";
         }
     }
 }

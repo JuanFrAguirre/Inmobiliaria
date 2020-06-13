@@ -10,7 +10,7 @@ namespace frmInmobiliaria
     internal class Propietario : Persona
     {
         //propiedades
-        public int Numero { get; set; }
+        public long Numero { get; set; }
 
         internal Inmueble Inmueble { get; set; }
 
@@ -21,7 +21,7 @@ namespace frmInmobiliaria
             Inmueble = null;
         }
 
-        public Propietario(int numero, Inmueble inmueble, int dni, string nombre, int sexo) : base(dni, nombre, sexo)
+        public Propietario(long numero, Inmueble inmueble, int dni, string nombre, int sexo) : base(dni, nombre, sexo)
         {
             Numero = numero;
             Inmueble = inmueble;
@@ -33,9 +33,9 @@ namespace frmInmobiliaria
             return
                 $"{base.ToStringPersona()}\n" +
                 $"Numero: {Numero}\n" +
-                $"\t---------" +
+                $"\t---------\n" +
                 $"Inmueble: \n" +
-                $"{Inmueble.ToStringInmueble()}\n";
+                $"{Inmueble.ToStringInmueble()}";
         }
     }
 }
